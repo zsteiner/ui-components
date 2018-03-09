@@ -1,0 +1,14 @@
+.uic-input {
+  padding: .5625em;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.uic-label {
+  font-size: .875rem;
+
+  &--stacked {
+    display: block;
+    margin-bottom: .25em;
+  }
+}

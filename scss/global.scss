@@ -1,0 +1,29 @@
+
+
+*, 
+*:before, 
+*:after { 
+	box-sizing: inherit;
+}
+
+html {
+  height: 100%;  
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  padding: 1rem;
+  height: 100%;
+}
+
+@import 'structure';
+@import 'input';
