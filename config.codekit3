@@ -30,23 +30,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/css\/global.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/global-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/global.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/css\/global.css.map",
-		"oF": 0
-		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -62,7 +45,7 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/README.html",
 		"oF": 0,
 		"oFM": 0,
@@ -1976,7 +1959,7 @@
 		"strictUnits": 0
 		},
 	"languageDefaultsMARKDOWN": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 1,
 		"autoOutputPathFilenamePattern": "*.html",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
