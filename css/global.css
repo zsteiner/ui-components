@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  height: 100%; }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.container {
+  padding: 1rem;
+  height: 100%; }
+
+.uic-group {
+  margin-bottom: 2rem; }
+  .uic-group__title {
+    margin-bottom: .5em; }
+
+.uic-component {
+  margin-bottom: 1rem; }
+
+.uic-input {
+  padding: .5625em;
+  font-size: 1rem;
+  line-height: 1; }
+
+.uic-label {
+  font-size: .875rem; }
+  .uic-label--stacked {
+    display: block;
+    margin-bottom: .25em; }
+
+.uic-input--click {
+  display: inline-block; }
+  .uic-input--click input {
+    margin-left: -2rem;
+    opacity: 0;
+    position: absolute; }
+    .uic-input--click input:checked + label::before {
+      background-color: #1678c2;
+      -webkit-box-shadow: 0 0 0 0.0625rem #1678c2;
+              box-shadow: 0 0 0 0.0625rem #1678c2; }
+    .uic-input--click input:disabled + label::before {
+      background: #d6d7d9;
+      -webkit-box-shadow: 0 0 0 0.0625rem light-grey;
+              box-shadow: 0 0 0 0.0625rem light-grey;
+      cursor: not-allowed; }
+    .uic-input--click input[type="radio"] + label::before {
+      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
+              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
+      border-radius: 100%; }
+    .uic-input--click input[type="radio"]:checked + label::before {
+      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
+              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2; }
+    .uic-input--click input[type="radio"]:focus + label::before {
+      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem #1678c2, 0 0 0.25rem 0.25rem #1678c2, 0 0 0.5rem 0.5rem #1678c2;
+              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem #1678c2, 0 0 0.25rem 0.25rem #1678c2, 0 0 0.5rem 0.5rem #1678c2; }
+    .uic-input--click input[type="checkbox"]:checked + label::before {
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHBvaW50cz0iNS42OTEgMTMuOTczIDE2IDMuNjY0IDE0LjM4OSAyIDUuNjkxIDEwLjY5OCAxLjYxMSA2LjYxNyAwIDguMjI4Ii8+PC9zdmc+DQo=);
+      color: white;
+      background-position: 50%;
+      background-size: 75%;
+      background-repeat: no-repeat; }
+    .uic-input--click input[type="checkbox"]:focus + label::before {
+      -webkit-box-shadow: 0 0 0 0.0625rem white, 0 0 0 0.25rem #1678c2;
+              box-shadow: 0 0 0 0.0625rem white, 0 0 0 0.25rem #1678c2; }
+    .uic-input--click input[type="checkbox"]:disabled + label {
+      opacity: .4; }
+  .uic-input--click label {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .uic-input--click label::before {
+      position: relative;
+      background: transparent;
+      -webkit-box-shadow: 0 0 0 0.0625rem #1678c2;
+              box-shadow: 0 0 0 0.0625rem #1678c2;
+      content: '\a0';
+      height: 1.125em;
+      margin-right: 0.75em;
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 1.125em;
+              flex: 0 0 1.125em;
+      width: 1.125em; }
+  .uic-input--clickLarge label::before {
+    height: 1.5em;
+    width: 1.5em;
+    -ms-flex-preferred-size: 1.5em;
+        flex-basis: 1.5em; }
+
+.uic-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0.0625rem solid #cfcfcf;
+  border-radius: 0;
+  color: black;
+  display: block;
+  font-size: 1em;
+  outline: none;
+  padding: .5em .5em .5em 2em;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpolygon%20fill%3D%22%2358585A%22%20fill-rule%3D%22evenodd%22%20points%3D%220%204%2016%204%208%2012%22%2F%3E%3C%2Fsvg%3E");
+  background-position: left .75em center;
+  background-repeat: no-repeat;
+  background-size: 1em; }
+  .uic-select select:focus {
+    outline: 0.0625rem solid #1678c2; }
+/*# sourceMappingURL=global.css.map */

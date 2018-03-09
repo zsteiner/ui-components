@@ -1,4 +1,8 @@
-
+$blue: #1678c2;
+$grey: #cfcfcf;
+$light-grey: #efefef;
+$white: #fff;
+$border-width: .0625rem;
 
 *, 
 *:before, 
@@ -11,8 +15,8 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
   height: 100%;
@@ -27,3 +31,5 @@ body {
 
 @import 'structure';
 @import 'input';
+@import 'select';
+@import 'switch';
