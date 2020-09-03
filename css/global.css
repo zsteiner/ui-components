@@ -1,15 +1,13 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+  box-sizing: inherit; }
 
 html {
   height: 100%; }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0;
   padding: 0;
@@ -48,23 +46,18 @@ body {
     position: absolute; }
     .uic-input--click input:checked + label::before {
       background-color: #1678c2;
-      -webkit-box-shadow: 0 0 0 0.0625rem #1678c2;
-              box-shadow: 0 0 0 0.0625rem #1678c2; }
+      box-shadow: 0 0 0 0.0625rem #1678c2; }
     .uic-input--click input:disabled + label::before {
       background: #d6d7d9;
-      -webkit-box-shadow: 0 0 0 0.0625rem light-grey;
-              box-shadow: 0 0 0 0.0625rem light-grey;
+      box-shadow: 0 0 0 0.0625rem light-grey;
       cursor: not-allowed; }
     .uic-input--click input[type="radio"] + label::before {
-      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
-              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
+      box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
       border-radius: 100%; }
     .uic-input--click input[type="radio"]:checked + label::before {
-      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2;
-              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2; }
+      box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.1875rem #1678c2; }
     .uic-input--click input[type="radio"]:focus + label::before {
-      -webkit-box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem #1678c2, 0 0 0.25rem 0.25rem #1678c2, 0 0 0.5rem 0.5rem #1678c2;
-              box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem #1678c2, 0 0 0.25rem 0.25rem #1678c2, 0 0 0.5rem 0.5rem #1678c2; }
+      box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.25rem #1678c2, 0 0 0.25rem 0.25rem #1678c2, 0 0 0.5rem 0.5rem #1678c2; }
     .uic-input--click input[type="checkbox"]:checked + label::before {
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHBvaW50cz0iNS42OTEgMTMuOTczIDE2IDMuNjY0IDE0LjM4OSAyIDUuNjkxIDEwLjY5OCAxLjYxMSA2LjYxNyAwIDguMjI4Ii8+PC9zdmc+DQo=);
       color: white;
@@ -72,32 +65,25 @@ body {
       background-size: 75%;
       background-repeat: no-repeat; }
     .uic-input--click input[type="checkbox"]:focus + label::before {
-      -webkit-box-shadow: 0 0 0 0.0625rem white, 0 0 0 0.25rem #1678c2;
-              box-shadow: 0 0 0 0.0625rem white, 0 0 0 0.25rem #1678c2; }
+      box-shadow: 0 0 0 0.0625rem white, 0 0 0 0.25rem #1678c2; }
     .uic-input--click input[type="checkbox"]:disabled + label {
       opacity: .4; }
   .uic-input--click label {
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex; }
     .uic-input--click label::before {
       position: relative;
       background: transparent;
-      -webkit-box-shadow: 0 0 0 0.0625rem #1678c2;
-              box-shadow: 0 0 0 0.0625rem #1678c2;
+      box-shadow: 0 0 0 0.0625rem #1678c2;
       content: '\a0';
       height: 1.125em;
       margin-right: 0.75em;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 1.125em;
-              flex: 0 0 1.125em;
+      flex: 0 0 1.125em;
       width: 1.125em; }
   .uic-input--clickLarge label::before {
     height: 1.5em;
     width: 1.5em;
-    -ms-flex-preferred-size: 1.5em;
-        flex-basis: 1.5em; }
+    flex-basis: 1.5em; }
 
 .uic-select select {
   -webkit-appearance: none;
@@ -120,73 +106,53 @@ body {
   .uic-select select:focus {
     outline: 0.0625rem solid #1678c2; }
 
-.uic-switch, .switch-disabled {
+.uic-switch {
+  flex: 0 0 auto;
+  margin-right: 0.5em;
   position: relative;
   overflow: hidden;
   display: inline-block;
-  vertical-align: middle; }
-  .uic-switch > input, .switch-disabled > input {
+  vertical-align: middle;
+  width: 2.25rem;
+  height: 1.5rem;
+  border-radius: 9999px; }
+  .uic-switch > input {
     position: absolute;
-    left: -9999px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
     outline: none; }
-  .uic-switch > label, .switch-disabled > label {
-    -ms-touch-action: manipulation;
+  .uic-switch > label {
     touch-action: manipulation;
     display: block;
     width: 100%;
     height: 100%;
     cursor: pointer;
-    margin: 0; }
-    .uic-switch > label::after, .switch-disabled > label::after {
-      content: '';
+    margin: 0;
+    background: #efefef;
+    transition: background-color 0.15s ease-out; }
+    .uic-switch > label::after {
+      content: "";
       display: block;
       position: absolute;
       top: 0;
-      left: 0; }
-  .uic-switch input + label, .switch-disabled input + label {
-    margin-left: 0; }
-
-/*
-  Defines the dimmensions of the switch.
-  $width - width of the switch.
-  $height - height of the switch.
-*/
-.uic-switch, .switch-disabled {
-  width: 2.25rem;
-  height: 1.5rem;
-  border: 0;
-  border-radius: 9999px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  margin-right: .5em; }
-  .uic-switch > label::after, .switch-disabled > label::after {
-    width: 1.5rem;
-    height: 1.5rem; }
-  .uic-switch input:checked + label::after, .switch-disabled input:checked + label::after {
-    left: 0.75rem; }
-  .uic-switch > label, .switch-disabled > label {
-    background: #efefef; }
-    .uic-switch > label::after, .switch-disabled > label::after {
+      left: 0;
       background: #fff;
       border-radius: 9999px;
-      -webkit-transition: left 0.15s ease-out;
-      transition: left 0.15s ease-out;
+      transition: all 0.15s ease-out;
+      width: 1.5rem;
+      height: 1.5rem;
       border: 0.25rem solid #efefef; }
-  .uic-switch input:checked + label, .switch-disabled input:checked + label {
+  .uic-switch input + label {
+    margin-left: 0; }
+  .uic-switch input:checked + label {
     background: #1678c2;
     margin: 0; }
-    .uic-switch input:checked + label::after, .switch-disabled input:checked + label::after {
-      border-color: #1678c2; }
-  .uic-switchContainer {
-    padding: .35em 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .uic-switch + label, .switch-disabled + label {
-    vertical-align: middle;
-    -ms-flex-item-align: center;
-        align-self: center; }
+    .uic-switch input:checked + label::after {
+      left: 0.75rem;
+      border: 0.25rem solid #1678c2; }
 
 .switch-disabled {
   pointer-events: none; }
